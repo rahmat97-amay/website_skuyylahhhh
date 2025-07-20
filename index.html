@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skuyylah Jalan-Jalan</title>
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        
+        .destination {
+            background: rgba(255,255,255,0.9); /* putih transparan agar tetap terlihat motif pegunungan */
+            border: 1px solid #ddd;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+        
+        form {
+            background: #f4f4f4;
+            padding: 2rem;
+            border-radius: 5px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 0.7rem 1rem;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #2980b9;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .section-white {
+            background: rgba(255,255,255,0.97);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        #tabel.section-white {
+            margin-top: 2rem;
+        }
+        
+        .quiz-section {
+            background: #2980b9;
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        #quiz p:first-child {
+            background: #2980b9;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header dengan judul utama -->
+    <header>
+        <h1>🏔️ Skuylah Jalan-Jalan 🏔️</h1>
+        <p>Menikmati Keindahan Alam Indonesia</p>
+    </header>
+    
+    <!-- Navigasi -->
+    <nav>
+        <a href="#destinasi">Destinasi</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#tabel">Info Wisata</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+    
+    <div class="container">
+        <!-- Bagian destinasi dengan paragraf dan pemformatan teks -->
+        <section id="destinasi" class="section-white">
+            <h2>Destinasi Populer</h2>
+            
+            <div class="destination">
+                <h3>Gunung Lawu</h3>
+                <p><strong>Gunung berapi aktif</strong> yang terletak di Pulau Jawa, tepatnya di perbatasan Jawa Tengah dan Jawa Timur, Indonesia. Gunung Lawu terletak di antara tiga kabupaten, yaitu Karanganyar di Jawa Tengah, Ngawi, dan Magetan di Jawa Timur.</p>
+                <p>📌 Lokasi: Jawa Tengah</p>
+                <p>⛰️ Tinggi: 3.265 mdpl</p>
+                <a href="https://id.wikipedia.org/wiki/Gunung_Lawu" target="_blank">Baca selengkapnya...</a>
+            </div>
+            
+            <div class="destination">
+                <h3>Gunung Merbabu</h3>
+                <p><strong>Gunung api yang bertipe Stratovulcano</strong> yang terletak secara geografis pada 7,5° LS dan 110,4° BT. Secara administratif gunung ini berada di wilayah Kabupaten Magelang di lereng sebelah barat dan Kabupaten Boyolali di lereng sebelah timur dan selatan, Kabupaten Semarang di lereng sebelah utara, Provinsi Jawa Tengah.</p>
+                <p>📌 Lokasi: Jawa Tengah</p>
+                <p>⛰️ Tinggi: 3.145 mdpl</p>
+                <a href="https://id.wikipedia.org/wiki/Gunung_Merbabu" target="_blank">Baca selengkapnya...</a>
+            </div>
+            <div class="destination">
+                <h3>Gunung Slamet</h3>
+                <p><strong>gunung berapi kerucut tipe A</strong>yang berada di Jawa Tengah, Indonesia, dan merupakan gunung tunggal yang terpisah dari pegunungan. Terletak di antara 5 kabupaten, yaitu Kabupaten Banyumas, Kabupaten Purbalingga, Kabupaten Pemalang, Kabupaten Tegal dan Kabupaten Brebes. </p>
+                <p>📌 Lokasi: Jawa Tengah</p>
+                <p>⛰️ Tinggi: 3.432 mdpl</p>
+                <a href="https://id.wikipedia.org/wiki/Gunung_Slamet" target="_blank">Baca selengkapnya...</a>
+            </div>
+        </section>
+        
+        <!-- Galeri gambar -->
+        <section id="galeri" class="section-white">
+            <h2>Galeri Wisata</h2>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <img src="Gunung Merbabu.jpg" alt="Puncak Gunung Merbabu" width="300" height="200">
+                <img src="Gunung Lawu.jpg" alt="Pemandangan Gunung Lawu" width="300" height="200">
+                <img src="Gunung Slamet.jpg" alt="Keindahan Gunung Slamet" width="300" height="200">
+            </div>
+        </section>
+        
+        <!-- Tabel informasi -->
+        <section id="tabel" class="section-white">
+            <h2>Informasi Pendakian</h2>
+            <table>
+                <tr>
+                    <th>Pendakian</th>
+                    <th>Waktu Terbaik</th>
+                    <th>Musim</th>
+                </tr>
+                <tr>
+                    <td>Pendakian Gunung Lawu</td>
+                    <td>Juli - Agustus</td>
+                    <td>Kemarau</td>
+                </tr>
+                <tr>
+                    <td>Pendakian Gunung Merbabu</td>
+                    <td>Juli - Agustus</td>
+                    <td>Kemarau</td>
+                </tr>
+                <tr>
+                    <td>Pendakian Gunung Slamet</td>
+                    <td>Juli - Agustus</td>
+                    <td>Kemarau</td>
+                </tr>
+            </table>
+        </section>
+
+ <!-- Daftar fasilitas -->
+        <section class="section-white">
+            <h2>Fasilitas Pendakian</h2>
+            <ul>
+                <li>Pemandu pendakian</li>
+                <li>Porter pendakian</li>
+                <li>Tenda dan perlengkapan camping</li>
+                <li>P3K dan alat keselamatan</li>
+            </ul>
+
+ <h3>Peralatan Wajib:</h3>
+            <ol>
+                <li>Jaket gunung dan sleeping bag</li>
+                <li>Headlamp dan senter</li>
+                <li>Pakaian ganti</li>
+                <li>Sepatu trekking</li>
+                <li>Trekking pole</li>
+                <li>P3K pribadi</li>
+            </ol>
+        </section>
+
+        
+        <!-- Form kontak -->
+        <section id="kontak" class="section-white">
+            <h2>Hubungi Kami</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            
+            <div id="thankYouMsg" class="hidden">
+                <h3>Terima kasih telah menghubungi kami!</h3>
+                <p>Kami akan segera merespon pesan Anda.</p>
+            </div>
+        </section>
+        
+        <!-- Media audio dan video -->
+        <section class="section-white">
+            <h3>Video Pendakian Bersama</h3>
+            <video width="400" controls playsinline>
+                <source src="video pendakian.mp4" type="video/mp4">
+                Browser Anda tidak mendukung elemen video.
+            </video>
+        </section>
+        
+        <!-- Elemen interaktif JavaScript -->
+        <section class="quiz-section">
+            <h2>Kuis Singkat</h2>
+            <button onclick="showQuiz()">Mulai Kuis</button>
+            
+            <div id="quiz" class="hidden">
+                <p>Gunung apa yang tertinggi di Jawa Tengah?</p>
+                <button onclick="checkAnswer('Merbabu', this)">Gunung Merbabu</button>
+                <button onclick="checkAnswer('Lawu', this)">Gunung Lawu</button>
+                <button onclick="checkAnswer('Slamet', this)">Gunung Slamet</button>
+                
+                <p id="quizResult"></p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Skuylah Jalan-Jalan. Skuyylahhhh.</p>
+        <p>Temukan kami di: 
+            <a href="https://www.instagram.com/skuy_lahhhh/" target="_blank" style="display: inline-flex; align-items: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512" style="margin-right:6px;">
+                    <defs>
+                        <linearGradient id="ig-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#f9ce34"/>
+                            <stop offset="50%" stop-color="#ee2a7b"/>
+                            <stop offset="100%" stop-color="#6228d7"/>
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#ig-gradient)" d="M224.1 141c-63.6 0-115 51.4-115 115s51.4 115 115 115 115-51.4 115-115-51.4-115-115-115zm0 190c-41.4 0-75-33.6-75-75s33.6-75 75-75 75 33.6 75 75-33.6 75-75 75zm146.4-194.3c0 14.9-12.1 27-27 27s-27-12.1-27-27 12.1-27 27-27 27 12.1 27 27zm76.1 27.2c-1.7-35.3-9.9-66.7-36.2-92.9S388.6 17.7 353.3 16c-35.3-1.7-141.3-1.7-176.6 0-35.3 1.7-66.7 9.9-92.9 36.2S17.7 123.4 16 158.7c-1.7 35.3-1.7 141.3 0 176.6 1.7 35.3 9.9 66.7 36.2 92.9s57.6 34.5 92.9 36.2c35.3 1.7 141.3 1.7 176.6 0 35.3-1.7 66.7-9.9 92.9-36.2s34.5-57.6 36.2-92.9c1.7-35.3 1.7-141.3 0-176.6zM398.8 388c-7.8 19.6-22.9 34.7-42.5 42.5-29.5 11.7-99.5 9-132.3 9s-102.7 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.5-9-99.5-9-132.3s-2.6-102.7 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.5-11.7 99.5-9 132.3-9s102.7-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.5 9 99.5 9 132.3s2.6 102.7-9 132.3z"/>
+                </svg>
+                <span style="background: linear-gradient(90deg,#f9ce34,#ee2a7b,#6228d7); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: bold;">skuy_lahhhh</span>
+            </a> 
+        </p>
+    </footer>
+    
+    <script>
+        // JavaScript sederhana untuk form
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Sembunyikan form, tampilkan pesan terima kasih
+            this.classList.add('hidden');
+            document.getElementById('thankYouMsg').classList.remove('hidden');
+            
+            // Reset form setelah 5 detik
+            setTimeout(() => {
+                this.reset();
+                this.classList.remove('hidden');
+                document.getElementById('thankYouMsg').classList.add('hidden');
+            }, 5000);
+        });
+        
+        // Fungsi untuk kuis
+        function showQuiz() {
+            document.getElementById('quiz').classList.remove('hidden');
+        }
+        
+        function checkAnswer(answer, button) {
+            const resultElement = document.getElementById('quizResult');
+            
+            if (answer === 'Slamet') {
+                resultElement.textContent = 'Benar! Gunung Slamet adalah yang tertinggi di Jawa Tengah.';
+                resultElement.style.color = 'white';
+                resultElement.style.background = '#2980b9'; // biru
+                resultElement.style.padding = '0.5rem';
+                resultElement.style.borderRadius = '6px';
+                button.style.backgroundColor = '#2ecc71';
+            } else {
+                resultElement.textContent = 'Salah! Jawaban yang benar adalah Gunung Slamet.';
+                resultElement.style.color = 'white';
+                resultElement.style.background = '#e74c3c';
+                resultElement.style.padding = '0.5rem';
+                resultElement.style.borderRadius = '6px';
+                button.style.backgroundColor = '#e74c3c';
+            }
+            const buttons = document.querySelectorAll('#quiz button');
+            buttons.forEach(btn => {
+                btn.disabled = true;
+            });
+        }
+    </script>
+</body>
+</html>
